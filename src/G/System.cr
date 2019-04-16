@@ -1,9 +1,11 @@
 require "Entity"
 
 class System
+  property subsystems
+  property entities
   def initialize
-    @subsystems : Array(Subsystem) = []
-    @entities : Array(Entity) = []
+    @subsystems = [] of Array(Subsystem)
+    @entities = [] of Array(Entity)
   end
 
   def apply_all
@@ -13,7 +15,6 @@ class System
       end
     end
 end
-
 
 class Subsystem(T)
   def apply(entity : Entity)

@@ -1,6 +1,6 @@
+require "secure_random"
+
 class Entity
   getter id
-  def initialize
-    @id = SecureRandom.uuid
-  end
+  @id = SecureRandom.uuid
 end
