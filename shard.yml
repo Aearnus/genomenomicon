@@ -1,0 +1,13 @@
+name: genomenomicon
+version: 0.1.0
+
+authors:
+  - Aearnus <tslimkemann42@gmail.com>
+
+targets:
+  genomenomicon:
+    main: src/genomenomicon.cr
+
+crystal: 0.27.2
+
+license: MIT
