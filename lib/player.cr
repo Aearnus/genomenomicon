@@ -1,4 +1,3 @@
-require "entity"
 require "gamesystem"
 
 class Player < Entity
