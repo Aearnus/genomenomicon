@@ -6,6 +6,7 @@ end
 
 class DrawableSystem < GameSubsystem
   def apply(drawable : Drawable)
+    super
     drawable.draw
   end
 end
