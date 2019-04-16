@@ -1,6 +1,6 @@
-require "Entity"
+require "entity"
 
-class System
+class GameSystem
   property subsystems
   property entities
   def initialize
@@ -14,9 +14,10 @@ class System
         s.apply ent
       end
     end
+  end
 end
 
-class Subsystem(T)
+class GameSubsystem(T)
   def apply(entity : Entity)
     if entity.is_a? T
       puts "calling subsystem on entity"

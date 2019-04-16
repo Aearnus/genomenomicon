@@ -1,7 +1,10 @@
+require "entity"
+require "gamesystem"
+
 class Player < Entity
   def initialize
   end
 end
 
-class PlayerSubsystem < Subsystem(Player)
+class PlayerSubsystem < GameSubsystem(Player)
 end
