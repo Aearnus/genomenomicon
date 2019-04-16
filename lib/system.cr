@@ -4,8 +4,8 @@ class System
   property subsystems
   property entities
   def initialize
-    @subsystems = [] of Array(Subsystem)
-    @entities = [] of Array(Entity)
+    @subsystems = [] of Subsystem
+    @entities = [] of Entity
   end
 
   def apply_all

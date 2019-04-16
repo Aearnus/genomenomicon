@@ -1,6 +1,6 @@
-require "secure_random"
+require "uuid"
 
 class Entity
   getter id
-  @id = SecureRandom.uuid
+  @id = UUID.random
 end
